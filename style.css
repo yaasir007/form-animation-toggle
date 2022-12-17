@@ -1,0 +1,56 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-wrapper {
+  width: 600px;
+  height: 500px;
+  border: 2px solid orange;
+}
+
+form {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.title {
+  font-size: larger;
+  color: brown;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  margin-block-end: 3rem;
+}
+
+.fields {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.para {
+  margin-top: 2rem;
+  animation: fade 1s linear;
+  display: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
