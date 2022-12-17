@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: black;
+  color: gold;
 }
 
 .form-wrapper {
@@ -39,10 +41,13 @@ form {
   gap: 2rem;
 }
 
+.none {
+  display: none;
+}
+
 .para {
   margin-top: 2rem;
   animation: fade 1s linear;
-  display: none;
 }
 
 @keyframes fade {
@@ -54,3 +59,4 @@ form {
     opacity: 1;
   }
 }
+
