@@ -8,6 +8,6 @@ allRadios.forEach((element) => {
   element.addEventListener('click', () => {
     para.classList.remove("none");
     title.innerHTML = element.value;
-
+    fullPara.innerText = 'Hello';
   })
 });
