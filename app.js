@@ -4,10 +4,17 @@ const fullPara = document.querySelector("#fullPara");
 const para = document.querySelector(".para");
 
 
+
 allRadios.forEach((element) => {
   element.addEventListener('click', () => {
     para.classList.remove("none");
     title.innerHTML = element.value;
-    fullPara.innerText = 'Hello';
+    if (element.value === "drupal") {
+      fullPara.innerText = 'Hello';
+    }
+
+    if (element.value === "umbraco") {
+      fullPara.innerText = "first";
+    }
   })
 });
